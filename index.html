@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <style>
+        .navbar {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .nav-logo {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-links a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        body {
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">My Account</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="monthly-report.html">Monthly Report</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </nav>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Personal Income & Expense — Subair V M</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#071024; --card:#07182a; --muted:#9aa4b2; --accent:#7dd3fc; --accent-2:#60a5fa;
+--glass: rgba(255,255,255,0.03);
+--success: #10b981; --danger:#f97316;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#041226 0%, #06142a 100%);color:#e6eef6;margin:0;min-height:100vh}
+.app{display:flex;gap:18px;padding:18px;max-width:1400px;margin:0 auto}
+aside{width:320px;background:var(--card);border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(0,0,0,0.5)}
+main{flex:1}
+h1,h2,h3{margin:0 0 10px 0}
+.brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#022431;font-weight:700}
+.nav{display:flex;flex-direction:column;gap:6px}
+.nav button{background:transparent;color:var(--muted);border:0;padding:10px;border-radius:8px;text-align:left;cursor:pointer;font-weight:600}
+.nav button.active{background:linear-gradient(90deg, rgba(125,211,252,0.08), rgba(96,165,250,0.06));color:var(--accent);box-shadow:inset 0 0 0 1px rgba(125,211,252,0.04)}
+.banks{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:12px}
+.bank-chip{padding:8px;border-radius:8px;background:var(--glass);text-align:center;font-size:13px;color:var(--muted);cursor:pointer}
+.bank-chip.active{background:linear-gradient(90deg, rgba(125,211,252,0.06), rgba(96,165,250,0.03));color:var(--accent);box-shadow:0 6px 18px rgba(0,0,0,0.4)}
+.card{background:var(--card);padding:14px;border-radius:12px;margin-bottom:12px;box-shadow:0 6px 18px rgba(0,0,0,0.45)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.muted{color:var(--muted);font-size:13px}
+.big{font-size:20px;font-weight:700}
+.green{color:var(--success)}
+.red{color:var(--danger)}
+.controls{display:flex;gap:8px;flex-wrap:wrap}
+.btn{background:linear-gradient(90deg,var(--accent),var(--accent-2));border:0;color:#022431;padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:700}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:8px;text-align:left;border-bottom:1px dashed rgba(255,255,255,0.03);font-size:14px}
+.small{font-size:13px}
+.right{text-align:right}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:12px}
+input, select{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:8px;border-radius:8px;color:var(--muted);outline:none}
+input::placeholder{color:#6f8596}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(2,6,12,0.6);z-index:40}
+.modal-card{width:640px;max-width:95%;background:#0b1624;padding:14px;border-radius:12px}
+.row{display:flex;gap:8px}
+.flex{flex:1}
+.foot{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}
+.empty{color:var(--muted);padding:30px;text-align:center;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00))}
+@media (max-width:900px){.app{flex-direction:column;padding:12px}.aside{width:100%}aside{width:100%}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside>
+<div class="brand">
+<div class="logo">PE</div>
+<div>
+<div style="font-weight:700">Personal Accounts</div>
+<div class="muted" style="font-size:12px">Income & Expense — Subair</div>
+</div>
+</div>
+
+<div class="nav" id="main-nav">
+<button data-view="dashboard" class="active">Dashboard</button>
+<button data-view="transactions">All Transactions</button>
+<button data-view="transfer">Intra-Bank Transfer</button>
+<button data-view="daily-report">Daily Report</button>
+<button data-view="settings">Settings</button>
+</div>
+
+<div style="margin-top:12px">
+<div class="muted" style="font-size:13px;margin-bottom:6px">Banks</div>
+<div class="banks" id="banks-list"></div>
+<div style="display:flex;justify-content:center;gap:8px;margin-top:12px">
+<button class="btn" id="add-bank" style="flex:1;max-width:120px">Add Bank</button>
+<button class="btn ghost" id="reset-app" style="flex:1;max-width:120px">Reset</button>
+</div>
+</div>
+</aside>
+
+<main>
+<!-- Topbar + content area -->
+<div class="topbar">
+<div>
+<h1 id="page-title">Dashboard</h1>
+<div class="muted" id="page-sub">Overview of balances and activity</div>
+</div>
+<div class="controls">
+<input id="quick-search" placeholder="Search transactions or notes..." />
+<button class="btn" id="quick-add-income">+ Income</button>
+<button class="btn" id="quick-add-expense">- Expense</button>
+</div>
+</div>
+
+<div id="content-area">
+<!-- Dashboard view -->
+<div id="view-dashboard" class="view">
+<div class="grid-3">
+<div class="card">
+<div class="muted">Total Assets</div>
+<div class="big" id="total-assets">₹0.00</div>
+<div class="muted small">Sum of all bank balances</div>
+</div>
+<div class="card">
+<div class="muted">Income (period)</div>
+<div class="big green" id="total-income">₹0.00</div>
+<div class="muted small">Income transactions (transfers excluded)</div>
+</div>
+<div class="card">
+<div class="muted">Expense (period)</div>
+<div class="big red" id="total-expense">₹0.00</div>
+<div class="muted small">Expense transactions (transfers excluded)</div>
+</div>
+</div>
+
+<div class="card" style="margin-top:12px">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+<div><strong>Recent transactions</strong></div>
+<div class="muted small">Transfers are shown but not counted in income/expense totals</div>
+</div>
+<table class="table" id="recent-table">
+<thead>
+<tr><th>Date</th><th>Bank / Type</th><th>Category / Notes</th><th class="right">Amount</th></tr>
+</thead>
+<tbody id="recent-body"></tbody>
+</table>
+</div>
+</div>
+
+<!-- All transactions -->
+<div id="view-transactions" class="view" style="display:none">
+<div class="card">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+<div><strong>All Transactions</strong></div>
+<div>
+<button class="btn" id="add-transaction">Add</button>
+<button class="btn ghost" id="export-json">Export</button>
+</div>
+</div>
+
+<table class="table" id="tx-table">
+<thead>
+<tr><th>Date</th><th>Bank</th><th>Type</th><th>Category</th><th class="right">Amount</th><th>Actions</th></tr>
+</thead>
+<tbody id="tx-body"></tbody>
+</table>
+</div>
+</div>
+
+<!-- Transfer -->
+<div id="view-transfer" class="view" style="display:none">
+<div class="card">
+<h3>Intra-Bank Transfer</h3>
+<div class="muted small">Transfers move money between banks. They do not count as income or expense.</div>
+<div style="margin-top:12px" id="transfer-form">
+<div class="row" style="margin-bottom:8px">
+<select id="transfer-from" class="flex"></select>
+<select id="transfer-to" class="flex"></select>
+</div>
+<div class="row" style="margin-bottom:8px">
+<input type="date" id="transfer-date" class="flex"/>
+<input type="number" id="transfer-amt" placeholder="Amount" class="flex"/>
+</div>
+<div class="row">
+<input id="transfer-note" placeholder="Note (optional)" />
+<button class="btn" id="do-transfer">Transfer</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Daily report -->
+<div id="view-daily-report" class="view" style="display:none">
+<div class="card">
+<div style="display:flex;justify-content:space-between;align-items:center">
+<div>
+<h3>Daily Report</h3>
+<div class="muted small">Shows income and expense for selected date (transfers excluded)</div>
+</div>
+<div>
+<input type="date" id="report-date" />
+</div>
+</div>
+
+<div style="margin-top:12px" id="daily-output"></div>
+</div>
+</div>
+
+<!-- Settings (edit banks) -->
+<div id="view-settings" class="view" style="display:none">
+<div class="card">
+<h3>Banks & Settings</h3>
+<div style="margin-top:8px" id="banks-edit-area"></div>
+</div>
+</div>
+
+</div>
+</main>
+</div>
+
+<!-- Modals -->
+<div id="modal-root" style="display:none"></div>
+
+<script>
+/*
+Personal Accounts App v1
+- stores in localStorage key: pe_app_v1
+- Data model:
+{ banks: [{id,name,note}], transactions: [ {id,type:'income'|'expense'|'transfer',date,bankId,amount,category,notes,fromBank,toBank} ] }
+- Transfers: type==='transfer' have fromBank and toBank and amount; they adjust balances but are excluded from income/expense sums
+*/
+
+const STORAGE_KEY = 'pe_app_v1';
+const DEFAULT_BANK_COUNT = 12;
+let state = { banks: [], transactions: [] };
+let ui = { currentView: 'dashboard', activeBankId: null };
+
+function uid(prefix='id'){return prefix + '_' + Math.random().toString(36).slice(2,9)}
+
+// --- storage ---
+function saveState(isNewTx = false) {
+// Add metadata for transactions
+if (isNewTx) {
+    state.lastUpdate = Date.now();
+    state.updateType = 'new_transaction';
+}
+
+const data = JSON.stringify(state);
+localStorage.setItem(STORAGE_KEY, data);
+
+// Dispatch storage event for other windows
+window.dispatchEvent(new StorageEvent('storage', {
+    key: STORAGE_KEY,
+    newValue: data,
+    storageArea: localStorage
+}));
+}
+
+function loadState(){
+let raw = localStorage.getItem(STORAGE_KEY);
+if(raw){
+    try{ 
+        const newState = JSON.parse(raw);
+        // Compare if state actually changed
+        if (JSON.stringify(newState) !== JSON.stringify(state)) {
+            console.log('State updated from storage');
+            state = newState;
+            return true; // State changed
+        }
+        return false; // No change
+    } catch(e){ 
+        console.error('Failed to parse stored data:', e); 
+        seedDefault(); 
+        return true;
+    }
+} else {
+    seedDefault();
+    return true;
+}
+}
+function seedDefault(){
+state = { banks: [], transactions: [] };
+for(let i=1;i<=DEFAULT_BANK_COUNT;i++){
+state.banks.push({id: 'bank_'+i, name: 'Bank ' + i, note: ''});
+}
+saveState();
+}
+
+// Track updates to avoid unnecessary refreshes
+let lastStorageUpdate = 0;
+
+// Listen for storage changes from other windows
+window.addEventListener('storage', (e) => {
+    if (e.key === STORAGE_KEY) {
+        const now = Date.now();
+        if (now - lastStorageUpdate > 500) { // Debounce updates
+            console.log('Storage changed in another window, reloading...');
+            if (loadState()) {
+                renderAll();
+                lastStorageUpdate = now;
+            }
+        }
+    }
+});
+
+// --- derived ---
+function getBankById(id){ return state.banks.find(b=>b.id===id) }
+function computeBankBalance(bankId){
+// base 0 + incomes - expenses + net transfers (in-out)
+let inc = sum(state.transactions.filter(t => t.type==='income' && t.bankId===bankId), 'amount');
+let exp = sum(state.transactions.filter(t => t.type==='expense' && t.bankId===bankId), 'amount');
+let inT = sum(state.transactions.filter(t => t.type==='transfer' && t.toBank===bankId),'amount');
+let outT = sum(state.transactions.filter(t => t.type==='transfer' && t.fromBank===bankId),'amount');
+return (inc - exp) + (inT - outT);
+}
+function sum(arr, key){ return arr.reduce((s,x)=>(s + (Number(x[key]||0))), 0); }
+
+// --- render ---
+function $(sel){ return document.querySelector(sel) }
+function $all(sel){ return Array.from(document.querySelectorAll(sel)) }
+
+function renderBanksList(){
+const el = $('#banks-list'); el.innerHTML = '';
+state.banks.forEach(b=>{
+const div = document.createElement('div');
+div.className = 'bank-chip' + (ui.activeBankId===b.id ? ' active' : '');
+div.textContent = b.name;
+div.title = 'Click to open bank page';
+div.onclick = ()=>{ ui.activeBankId = b.id; showView('bank'); };
+el.appendChild(div);
+});
+}
+
+function setActiveNav(btnSel){ $all('#main-nav button').forEach(b=>b.classList.remove('active')); if(btnSel)btnSel.classList.add('active') }
+
+function showView(view){
+ui.currentView = view;
+$all('.view').forEach(v=>v.style.display = 'none');
+if(view==='bank'){
+// show bank detail as a transactions filter
+$('#page-title').textContent = getBankById(ui.activeBankId)?.name || 'Bank';
+$('#page-sub').textContent = 'Transactions for this bank';
+renderBankPage();
+$('#view-transactions').style.display = 'none';
+// we'll reuse the transactions view area for bank
+// create a quick card below dashboard area
+// simpler: use transactions view to show filtered list
+$('#view-transactions').style.display = 'block';
+setActiveNav(null);
+return;
+}
+const id = 'view-' + view.replace(' ', '-');
+const node = $('#' + id);
+if(node) node.style.display = '';
+// title/sub
+if(view==='dashboard'){ $('#page-title').textContent='Dashboard'; $('#page-sub').textContent='Overview of balances and activity'; setActiveNav(document.querySelector('[data-view="dashboard"]')) }
+if(view==='transactions'){ $('#page-title').textContent='All Transactions'; $('#page-sub').textContent='Income, expenses and transfers'; setActiveNav(document.querySelector('[data-view="transactions"]')) }
+if(view==='transfer'){ $('#page-title').textContent='Intra-Bank Transfer'; $('#page-sub').textContent='Move money between your banks (not counted as income/expense)'; setActiveNav(document.querySelector('[data-view="transfer"]')) }
+if(view==='daily-report'){ $('#page-title').textContent='Daily Report'; $('#page-sub').textContent='Income and expense for a selected date'; setActiveNav(document.querySelector('[data-view="daily-report"]')) }
+if(view==='settings'){ $('#page-title').textContent='Settings'; $('#page-sub').textContent='Edit banks and preferences'; setActiveNav(document.querySelector('[data-view="settings"]')) }
+renderAll();
+}
+
+function renderAll(){
+renderBanksList();
+renderDashboard();
+renderTransactions();
+renderTransferForm();
+renderDailyReport();
+renderSettings();
+}
+
+// Dashboard
+function renderDashboard(){
+const totalAssets = state.banks.reduce((s,b)=> s + computeBankBalance(b.id), 0);
+$('#total-assets').textContent = format(totalAssets);
+const incomeSum = sum(state.transactions.filter(t => t.type==='income'), 'amount');
+const expenseSum = sum(state.transactions.filter(t => t.type==='expense'), 'amount');
+$('#total-income').textContent = format(incomeSum);
+$('#total-expense').textContent = format(expenseSum);
+// recent 8 tx
+const recent = state.transactions.slice().sort((a,b)=> new Date(b.date) - new Date(a.date)).slice(0,8);
+const tbody = $('#recent-body'); tbody.innerHTML = '';
+recent.forEach(tx=>{
+const tr = document.createElement('tr');
+const date = formatDate(tx.date);
+const bankLabel = tx.type==='transfer' ? (`${getBankById(tx.fromBank)?.name||'?' } → ${getBankById(tx.toBank)?.name||'?'}`) : (getBankById(tx.bankId)?.name || '—');
+const typeLabel = tx.type==='income' ? 'Income' : tx.type==='expense' ? 'Expense' : 'Transfer';
+const cat = tx.category || tx.notes || '';
+const amt = (tx.type==='expense') ? '-' + format(tx.amount) : format(tx.amount);
+tr.innerHTML = `<td class="small">${date}</td>
+<td class="small">${bankLabel} <div class="muted">${typeLabel}</div></td>
+<td class="small">${escapeHtml(cat)}</td>
+<td class="right small">${amt}</td>`;
+tbody.appendChild(tr);
+});
+}
+
+// Transactions / Bank page
+function renderTransactions(filterBankId=null){
+const body = $('#tx-body'); body.innerHTML = '';
+let list = state.transactions.slice().sort((a,b)=> new Date(b.date) - new Date(a.date));
+if(ui.currentView==='bank' && ui.activeBankId) {
+// include transfers where bank is from or to, and incomes/expenses for bank
+list = list.filter(t => {
+if(t.type==='transfer'){ return t.fromBank===ui.activeBankId || t.toBank===ui.activeBankId; }
+return t.bankId===ui.activeBankId;
+});
+}
+list.forEach(tx=>{
+const tr = document.createElement('tr');
+const d = formatDate(tx.date);
+let bankName = '';
+let type = '';
+if(tx.type==='transfer'){ bankName = `${getBankById(tx.fromBank)?.name||'?' } → ${getBankById(tx.toBank)?.name||'?'}`; type='Transfer'; }
+else { bankName = getBankById(tx.bankId)?.name || '—'; type = tx.type==='income' ? 'Income' : 'Expense'; }
+const cat = tx.category || '';
+const amt = (tx.type==='expense') ? '-' + format(tx.amount) : format(tx.amount);
+tr.innerHTML = `<td class="small">${d}</td>
+<td class="small">${bankName}</td>
+<td class="small">${type}</td>
+<td class="small">${escapeHtml(cat)}</td>
+<td class="right small">${amt}</td>
+<td class="small"><button class="btn ghost" data-id="${tx.id}" onclick="editTx(event)">Edit</button> <button class="btn ghost" data-id="${tx.id}" onclick="deleteTx(event)">Delete</button></td>`;
+body.appendChild(tr);
+});
+}
+
+// Bank page reuse
+function renderBankPage(){
+// set transactions view content to bank's header
+renderTransactions();
+}
+
+// Transfer form
+function renderTransferForm(){
+const from = $('#transfer-from'); const to = $('#transfer-to');
+from.innerHTML = ''; to.innerHTML = '';
+state.banks.forEach(b=>{
+const opt1 = document.createElement('option'); opt1.value = b.id; opt1.textContent = b.name;
+const opt2 = opt1.cloneNode(true);
+from.appendChild(opt1); to.appendChild(opt2);
+});
+$('#transfer-date').value = new Date().toISOString().slice(0,10);
+}
+
+// Daily report
+function renderDailyReport(){
+const out = $('#daily-output'); out.innerHTML = '';
+const dtInput = $('#report-date'); if(!dtInput.value) dtInput.value = new Date().toISOString().slice(0,10);
+const date = dtInput.value;
+const incList = state.transactions.filter(t=> t.type==='income' && t.date===date);
+const expList = state.transactions.filter(t=> t.type==='expense' && t.date===date);
+const incSum = sum(incList,'amount'); const expSum = sum(expList,'amount');
+const dailyNet = incSum - expSum; // Calculate daily net change
+const frag = document.createElement('div');
+frag.innerHTML = `
+<div class="grid-3" style="margin-bottom:12px">
+<div class="card"><div class="muted">Date</div><div class="big">${formatDate(date)}</div></div>
+<div class="card">
+    <div class="muted">Daily Balance</div>
+    <div class="big ${dailyNet >= 0 ? 'green' : 'red'}">${format(Math.abs(dailyNet))}</div>
+    <div class="muted small">${dailyNet >= 0 ? 'Net Positive' : 'Net Negative'}</div>
+</div>
+<div class="card">
+    <div class="muted">Details</div>
+    <div style="font-size:14px;margin-top:4px">
+        <div class="green">Income: ${format(incSum)}</div>
+        <div class="red">Expense: ${format(expSum)}</div>
+    </div>
+</div>
+</div>
+<div class="card">
+<strong>Income items</strong>
+<table class="table"><tbody>${incList.map(t=>`<tr><td>${getBankById(t.bankId)?.name||''}</td><td>${escapeHtml(t.category||t.notes||'')}</td><td class="right">${format(t.amount)}</td></tr>`).join('')}</tbody></table>
+<hr />
+<strong>Expense items</strong>
+<table class="table"><tbody>${expList.map(t=>`<tr><td>${getBankById(t.bankId)?.name||''}</td><td>${escapeHtml(t.category||t.notes||'')}</td><td class="right">-${format(t.amount)}</td></tr>`).join('')}</tbody></table>
+</div>
+`;
+out.appendChild(frag);
+}
+
+// Settings (edit banks)
+function renderSettings(){
+const area = $('#banks-edit-area'); area.innerHTML = '';
+state.banks.forEach((b,i)=>{
+const div = document.createElement('div'); div.className='card'; div.style.display='flex'; div.style.alignItems='center'; div.style.justifyContent='space-between';
+div.innerHTML = `<div style="flex:1">
+<div style="font-weight:700">${i+1}. <span class="bank-name-${b.id}">${escapeHtml(b.name)}</span></div>
+<div class="muted small">${escapeHtml(b.note||'')}</div>
+<div class="muted small">Balance: ${format(computeBankBalance(b.id))}</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<button class="btn ghost" onclick="openEditBank('${b.id}')">Edit</button>
+<button class="btn ghost" onclick="deleteBank('${b.id}')">Delete</button>
+</div>`;
+area.appendChild(div);
+});
+}
+
+// --- utilities ---
+function format(num){ return '₹' + Number(num||0).toLocaleString('en-IN', {minimumFractionDigits:2, maximumFractionDigits:2}) }
+function formatDate(d){
+if(!d) return '';
+const dt = new Date(d);
+if (isNaN(dt)) return d;
+return dt.toLocaleDateString('en-GB'); // dd/mm/yyyy
+}
+function escapeHtml(s=''){ return String(s).replace(/[&<>"']/g, c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])); }
+
+// --- actions ---
+function addBank(name='New Bank'){
+const id = uid('bank');
+state.banks.push({id, name, note: ''});
+saveState(); renderAll();
+}
+function openEditBank(id){
+const bank = getBankById(id);
+if(!bank) return;
+showModal(`
+<h3>Edit Bank</h3>
+<div style="margin-top:8px">
+<div><input id="m-bank-name" value="${escapeHtml(bank.name)}" /></div>
+<div style="margin-top:8px"><input id="m-bank-note" value="${escapeHtml(bank.note||'')}" placeholder="Note (optional)" /></div>
+</div>
+<div class="foot">
+<button class="btn ghost" onclick="closeModal()">Cancel</button>
+<button class="btn" onclick="saveBank('${id}')">Save</button>
+</div>
+`);
+}
+function saveBank(id){
+const name = $('#m-bank-name').value.trim() || 'Bank';
+const note = $('#m-bank-note').value.trim();
+const bank = getBankById(id);
+bank.name = name; bank.note = note;
+saveState(); closeModal(); renderAll();
+}
+function deleteBank(id){
+if(!confirm('Delete bank and its transactions?')) return;
+state.banks = state.banks.filter(b=>b.id!==id);
+state.transactions = state.transactions.filter(t => {
+if(t.type==='transfer') return t.fromBank!==id && t.toBank!==id;
+return t.bankId!==id;
+});
+saveState(); renderAll();
+}
+
+// Transactions
+function openAddTransaction(defaultType='income', bankId=null){
+const bankOptions = state.banks.map(b=>`<option value="${b.id}" ${b.id===bankId?'selected':''}>${escapeHtml(b.name)}</option>`).join('');
+showModal(`
+<h3>Add Transaction</h3>
+<div style="margin-top:8px">
+<div class="row">
+<select id="m-tx-type"><option value="income" ${defaultType==='income'?'selected':''}>Income</option><option value="expense" ${defaultType==='expense'?'selected':''}>Expense</option></select>
+<select id="m-tx-bank">${bankOptions}</select>
+</div>
+<div class="row" style="margin-top:8px">
+<input type="date" id="m-tx-date" value="${new Date().toISOString().slice(0,10)}"/>
+<input id="m-tx-amt" placeholder="Amount" type="number" />
+</div>
+<div style="margin-top:8px">
+<input id="m-tx-cat" placeholder="Category (optional)" />
+</div>
+<div style="margin-top:8px">
+<input id="m-tx-note" placeholder="Note (optional)" />
+</div>
+</div>
+<div class="foot">
+<button class="btn ghost" onclick="closeModal()">Cancel</button>
+<button class="btn" onclick="saveNewTx()">Save</button>
+</div>
+`);
+}
+function saveNewTx(){
+    const type = $('#m-tx-type').value;
+    const bankId = $('#m-tx-bank').value;
+    const date = $('#m-tx-date').value || new Date().toISOString().slice(0,10);
+    const amount = Math.abs(Number($('#m-tx-amt').value || 0));
+    if(!amount || amount<=0){ alert('Enter an amount'); return; }
+    const category = $('#m-tx-cat').value.trim();
+    const notes = $('#m-tx-note').value.trim();
+    
+    // Create transaction with all required fields
+    const tx = { 
+        id: uid('tx'), 
+        type, 
+        date, 
+        amount, 
+        category, 
+        notes,
+        bankId,
+        timestamp: new Date().getTime(), // Add timestamp for sorting
+        added: new Date().toISOString() // Add creation timestamp
+    };
+
+    // Log for debugging
+    console.log('Creating new transaction:', tx);
+
+    // Add to state and save
+    state.transactions.push(tx);
+    
+    // Force immediate save and update with transaction flag
+    saveState(true);
+    closeModal();
+    renderAll();
+    
+    // Log confirmation
+    console.log('Transaction saved, total transactions:', state.transactions.length);
+    
+    // Debug log
+    console.log('Added transaction:', tx);
+}
+
+function editTx(event){
+const id = event.currentTarget.dataset.id;
+const tx = state.transactions.find(t=>t.id===id);
+if(!tx) return alert('Transaction not found');
+if(tx.type==='transfer'){
+showModalTransferEdit(tx);
+return;
+}
+const bankOptions = state.banks.map(b=>`<option value="${b.id}" ${b.id===tx.bankId?'selected':''}>${escapeHtml(b.name)}</option>`).join('');
+showModal(`
+<h3>Edit Transaction</h3>
+<div style="margin-top:8px">
+<div class="row">
+<select id="m-tx-type">${tx.type==='income'? '<option value="income" selected>Income</option><option value="expense">Expense</option>'
+: '<option value="income">Income</option><option value="expense" selected>Expense</option>'}</select>
+<select id="m-tx-bank">${bankOptions}</select>
+</div>
+<div class="row" style="margin-top:8px">
+<input type="date" id="m-tx-date" value="${tx.date}"/>
+<input id="m-tx-amt" placeholder="Amount" type="number" value="${tx.amount}" />
+</div>
+<div style="margin-top:8px">
+<input id="m-tx-cat" placeholder="Category (optional)" value="${escapeHtml(tx.category||'')}" />
+</div>
+<div style="margin-top:8px">
+<input id="m-tx-note" placeholder="Note (optional)" value="${escapeHtml(tx.notes||'')}" />
+</div>
+</div>
+<div class="foot">
+<button class="btn ghost" onclick="closeModal()">Cancel</button>
+<button class="btn" onclick="saveEditedTx('${tx.id}')">Save</button>
+</div>
+`);
+}
+function saveEditedTx(id){
+const tx = state.transactions.find(t=>t.id===id);
+if(!tx) return;
+tx.type = $('#m-tx-type').value;
+tx.bankId = $('#m-tx-bank').value;
+tx.date = $('#m-tx-date').value;
+tx.amount = Math.abs(Number($('#m-tx-amt').value||0));
+tx.category = $('#m-tx-cat').value.trim();
+tx.notes = $('#m-tx-note').value.trim();
+saveState(); closeModal(); renderAll();
+}
+function deleteTx(event){
+const id = event.currentTarget.dataset.id;
+if(!confirm('Delete this transaction?')) return;
+state.transactions = state.transactions.filter(t=>t.id!==id);
+saveState(); renderAll();
+}
+
+// Transfer
+function doTransfer(){
+const from = $('#transfer-from').value;
+const to = $('#transfer-to').value;
+const amount = Math.abs(Number($('#transfer-amt').value||0));
+const date = $('#transfer-date').value || new Date().toISOString().slice(0,10);
+const note = $('#transfer-note').value.trim();
+if(!from || !to){ alert('Select both banks'); return; }
+if(from===to){ alert('Cannot transfer to same bank'); return; }
+if(!amount || amount<=0){ alert('Enter amount'); return; }
+const tx = { id: uid('tx'), type: 'transfer', date, amount, notes: note, fromBank: from, toBank: to };
+state.transactions.push(tx);
+saveState(); renderAll();
+alert('Transfer saved');
+}
+
+// Edit transfer
+function showModalTransferEdit(tx){
+const bankOptionsFrom = state.banks.map(b=>`<option value="${b.id}" ${b.id===tx.fromBank?'selected':''}>${escapeHtml(b.name)}</option>`).join('');
+const bankOptionsTo = state.banks.map(b=>`<option value="${b.id}" ${b.id===tx.toBank?'selected':''}>${escapeHtml(b.name)}</option>`).join('');
+showModal(`
+<h3>Edit Transfer</h3>
+<div style="margin-top:8px">
+<div class="row">
+<select id="m-tf-from" class="flex">${bankOptionsFrom}</select>
+<select id="m-tf-to" class="flex">${bankOptionsTo}</select>
+</div>
+<div class="row" style="margin-top:8px">
+<input type="date" id="m-tf-date" value="${tx.date}" />
+<input id="m-tf-amt" type="number" value="${tx.amount}" />
+</div>
+<div style="margin-top:8px"><input id="m-tf-note" value="${escapeHtml(tx.notes||'')}" placeholder="Note" /></div>
+</div>
+<div class="foot">
+<button class="btn ghost" onclick="closeModal()">Cancel</button>
+<button class="btn" onclick="saveEditedTransfer('${tx.id}')">Save</button>
+</div>
+`);
+}
+function saveEditedTransfer(id){
+const tx = state.transactions.find(t=>t.id===id);
+if(!tx) return;
+tx.fromBank = $('#m-tf-from').value;
+tx.toBank = $('#m-tf-to').value;
+tx.date = $('#m-tf-date').value;
+tx.amount = Math.abs(Number($('#m-tf-amt').value||0));
+tx.notes = $('#m-tf-note').value.trim();
+saveState(); closeModal(); renderAll();
+}
+
+// Export
+function exportJson(){
+const dataStr = JSON.stringify(state, null, 2);
+const blob = new Blob([dataStr], {type:'application/json'});
+const url = URL.createObjectURL(blob);
+const a = document.createElement('a'); a.href=url; a.download='pe_data.json'; a.click(); URL.revokeObjectURL(url);
+}
+
+// Modal helpers
+function showModal(html){
+const root = $('#modal-root');
+root.style.display = 'block';
+root.innerHTML = `<div class="modal" onclick="closeModal(event)"><div class="modal-card" onclick="event.stopPropagation()">${html}</div></div>`;
+}
+function closeModal(e){
+if(e && e.target && e.target.classList && e.target.classList.contains('modal')) return; // prevent inner close
+$('#modal-root').style.display = 'none';
+$('#modal-root').innerHTML = '';
+}
+
+// Quick actions
+function quickAdd(type){
+// choose active bank if set or first bank
+const bank = ui.activeBankId || (state.banks[0] && state.banks[0].id);
+openAddTransaction(type, bank);
+}
+
+// Reset
+function resetApp(){
+if(!confirm('Reset app (this will delete all data)?')) return;
+localStorage.removeItem(STORAGE_KEY);
+seedDefault();
+loadState();
+renderAll();
+}
+
+// misc
+function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])); }
+
+// --- event wiring ---
+document.addEventListener('DOMContentLoaded', ()=>{
+loadState();
+renderAll();
+
+// nav
+$all('#main-nav button').forEach(b=>{
+b.addEventListener('click', (e)=>{
+const view = b.dataset.view;
+showView(view);
+});
+});
+
+// banks list actions
+$('#add-bank').addEventListener('click', ()=>{ addBank('Bank ' + (state.banks.length+1)); });
+$('#reset-app').addEventListener('click', resetApp);
+
+// quick add
+$('#quick-add-income').addEventListener('click', ()=>quickAdd('income'));
+$('#quick-add-expense').addEventListener('click', ()=>quickAdd('expense'));
+$('#add-transaction').addEventListener('click', ()=>openAddTransaction('income'));
+$('#export-json').addEventListener('click', exportJson);
+
+// transfer
+$('#do-transfer').addEventListener('click', doTransfer);
+
+// daily report date change
+$('#report-date').addEventListener('change', renderDailyReport);
+
+// quick search
+$('#quick-search').addEventListener('input', (e)=>{
+const q = e.target.value.trim().toLowerCase();
+if(!q){ renderAll(); return; }
+// filter transactions view
+const filtered = state.transactions.filter(t=>{
+return (t.notes||'').toLowerCase().includes(q) || (t.category||'').toLowerCase().includes(q) ||
+(getBankById(t.bankId)?.name||'').toLowerCase().includes(q) ||
+(getBankById(t.fromBank)?.name||'').toLowerCase().includes(q) ||
+(getBankById(t.toBank)?.name||'').toLowerCase().includes(q);
+});
+// show as temporary table in transactions view
+const tbody = $('#tx-body'); tbody.innerHTML = '';
+filtered.forEach(tx=>{
+const tr = document.createElement('tr');
+const d = formatDate(tx.date);
+let bankName = '';
+let type = '';
+if(tx.type==='transfer'){ bankName = `${getBankById(tx.fromBank)?.name||'?' } → ${getBankById(tx.toBank)?.name||'?'}`; type='Transfer'; }
+else { bankName = getBankById(tx.bankId)?.name || '—'; type = tx.type==='income' ? 'Income' : 'Expense'; }
+const cat = tx.category || '';
+const amt = (tx.type==='expense') ? '-' + format(tx.amount) : format(tx.amount);
+tr.innerHTML = `<td class="small">${d}</td>
+<td class="small">${bankName}</td>
+<td class="small">${type}</td>
+<td class="small">${escapeHtml(cat)}</td>
+<td class="right small">${amt}</td>
+<td class="small"><button class="btn ghost" data-id="${tx.id}" onclick="editTx(event)">Edit</button> <button class="btn ghost" data-id="${tx.id}" onclick="deleteTx(event)">Delete</button></td>`;
+tbody.appendChild(tr);
+});
+});
+
+// settings edit area functions are global
+});
+
+// global functions used in HTML attributes:
+window.openEditBank = openEditBank;
+window.deleteBank = deleteBank;
+window.editTx = editTx;
+window.deleteTx = deleteTx;
+window.saveBank = saveBank;
+window.closeModal = closeModal;
+window.saveEditedTx = saveEditedTx;
+window.openAddTransaction = openAddTransaction;
+window.saveNewTx = saveNewTx;
+window.doTransfer = doTransfer;
+window.saveEditedTransfer = saveEditedTransfer;
+window.exportJson = exportJson;
+window.resetApp = resetApp;
+window.quickAdd = quickAdd;
+window.addBank = addBank;
+
+</script>
+<footer style="background-color:#222; color:#fff; text-align:center; padding:8px 0; font-size:14px;">
+    <div style="max-width:1000px; margin:auto;">
+        <p style="margin:6px 0;">&copy; Pravasi Seva Kendra Vazhikkadavu. All rights reserved.</p>
+        <p style="margin:4px 0;">
+            <a href="/privacy-policy.html" style="color:#aaa; text-decoration:none;">Privacy Policy</a> | 
+            <a href="/terms.html" style="color:#aaa; text-decoration:none;">Terms of Service</a> | 
+            <a href="/contact.html" style="color:#aaa; text-decoration:none;">Contact</a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>
